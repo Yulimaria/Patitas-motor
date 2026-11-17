@@ -1,16 +1,10 @@
-/* crear la clase nodo.
-Cada atención es un objeto con fecha, motivo, veterinario y costo. */
 
-const Blue = [
-    { fecha: "2023-01-01", motivo: "Vacunación", veterinario: "Dr. Pérez", costo: 50 },
-    { fecha: "2023-01-02", motivo: "Chequeo", veterinario: "Dr. García", costo: 30 },
-    { fecha: "2023-01-03", motivo: "Desparasitación", veterinario: "Dr. López", costo: 40 },
-];
-
-/* creacion de clase nodo para la lista enlazada */
+ /* creamos el molde para fabricar nodos.*/
 class Nodo {
-  constructor(dato) {
-    this.dato = dato;
-    this.siguiente = null;
-  }
+    constructor(dato){ /* recibimos la información que tendrá cada nodo.*/
+        this.dato = dato; /*guardamos esa información.*/
+        this.siguiente = null;
+    }
 }
+
+module.exports = {Nodo}; /* exportamos la clase nodo para poder usarla en otros archivos. */
